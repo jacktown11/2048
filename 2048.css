@@ -1,0 +1,163 @@
+﻿body,section,header,footer,h1,ul,ol,form,input,textarea,th,td,select{
+	margin: 0px;
+	padding: 0px;
+}
+em{font-style: normal;}
+li{list-style: none;}
+a{text-decoration: none;}
+img{border: none; vertical-align: top;}
+table{border-collapse: collapse;}
+input,textarea{outline: none;}
+textarea{resize: none; overflow: auto;}
+body{font-size: 12px; font-family: "微软雅黑";}
+ul li{list-style: none;}
+
+input{border: none;}
+input:hover,
+button:hover {
+	cursor: pointer;
+}
+
+
+/* base */
+body{
+	width: 680px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #fff;
+}
+
+header{
+	color: yellow;
+	background: #348592;
+	text-align: center;
+	padding: 5px 0;
+	font-size: 150%;
+}
+
+#main{
+	overflow: hidden;
+	background: rgba(128,128,0,0.4);
+}
+
+#control{
+	float: right;
+	width: 100px;
+	height: 550px;
+	margin-right: 20px;
+	background-color: transparent;
+}
+#control ul{
+	/*background-color: #fff;*/
+	margin: 50px auto;
+}
+#control ul input,
+#control p button{
+	display: block;
+	margin: 20px auto;
+	width: 80px;
+	height: 25px;
+	border-radius: 3px;
+	outline: none;
+	border: none;
+	background-color: #fff;
+	font-size: 150%;
+	line-height: 25px;
+	text-align: center;
+}
+#control div{
+	background: none;
+	margin: 0 auto;
+	width: 100px;
+	height: 150px;
+	margin: 0 auto;
+}
+#control div input{
+	font-size: 150%;
+	display: block;
+	width: 48px;
+	height: 48px;
+	border: 1px solid transparent;
+	background-color: #fff;
+	border-radius: 50%;
+}
+#control p{
+	margin: 150px auto 0 auto;
+}
+
+
+input#top{margin: 0 auto;}
+input#left{float: left;}
+input#right{float: right;}
+input#bottom{margin: 0 auto;clear: both;}
+
+/* game_area */
+#game_area{
+	float: left;
+	position: relative;
+	width: 550px;
+	height: 550px;
+}
+#game_area #boxes
+{
+	width: 510px;
+	height: 510px;
+	margin: 20px auto;
+	position: relative;
+}
+
+#game_area #boxes div{
+	width: 120px;
+	height: 120px;
+	background-color: rgba(160,160,160,0.2);
+	position: relative;
+	display: inline-block;
+	margin-left: 6px;
+	margin-top: 6px;
+	vertical-align: bottom;  
+/* 	防止行间的间隙，默认情况下会放在基线上*/	
+}
+
+#game_area #boxes div.box{
+	display: block;
+	position: absolute;
+	background-color: green;
+	margin: 0;
+	text-align: center;
+	line-height: 120px;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+div.intro{
+	display: none;
+	position: fixed;
+	top: 20%;
+	left: 0%;
+	right: 0%;
+	padding: 30px;
+	background-color: rgba(100,100,100,0.9);
+	color: yellow;
+}
+div.intro li{
+	list-style-type: disc;
+	list-style-position: inside;
+	font-size: 150%;
+	padding-bottom: 1em;
+}
+div.intro button{
+	display: block;
+	width: 50px;
+	height: 50px;
+	margin:  10px auto 5px auto;
+	background-color: transparent;
+	border-width: 0;
+	border-radius: 50%;
+	background: #000 url(close.png) left center no-repeat;
+}
+div.intro button:hover{
+	box-shadow: #fff 0 0 8px 1px;
+}
+footer{
+	text-align: center;
+}

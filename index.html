@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2048</title>
+	<link rel="stylesheet" type="text/css" href="2048.css">
+</head>
+<body>
+	<header>
+		<h1>2048</h1>
+	</header>
+	<div id="main">
+		<section id="control" class="fl">
+			<ul>
+				<li><input type="button" id="reset" value="重置(R)"></li>
+				<li><input type="button" id="back" value="撤销(B)"></li>
+			</ul>
+			<div>
+				<input id="top" type="button" name="up" value="上">
+				<input id="left" type="button" name="left" value="左">
+				<input id="right" type="button" name="right" value="右">
+				<input id="bottom" type="button" name="down" value="下">
+			</div>
+			<p>
+				<button type="button" id="intro">规则</button>
+			</p>
+		</section>
+		<section id="game_area" class="fr">
+			<div id="boxes"><!--下面的元素若换行，在让其以行内块方式显示时水平方向上会有空格间隙-->
+				<div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div>
+			</div>
+		</section>
+	</div>
+	<footer>
+		<p>coded by <a href="https://jacktown11.github.io/">Jacktown</a></p>
+	</footer>
+	<div class="intro">
+		<h2>规则：</h2>
+		<ul>
+			<li>点击右侧上下左右按钮，将区块中方块向这个方向彻底折叠(相邻的具有相同数字的方块合并成一个方块，数值增大一倍);</li>
+			<li>可以用键盘上下左右(或ADSW)键代替鼠标点击;</li>
+			<li>每次点击进行某个方向的折叠后，会随机在空白方格生成一个数值2或4的方块，即使因为这个方向没有相邻的具有相同数值的方块，使得折叠没有真正进行;</li>
+			<li>点击‘重置’(R键)会清除所有方块,点击‘撤销’可以返回一步,最多能返回十步.</li>
+		</ul>
+		<button type="button"></button>
+	</div>
+	<script src="jquery-1.10.0.js"></script>
+	<script type="text/javascript" src="js1.js"></script>
+</body>
+</html>
